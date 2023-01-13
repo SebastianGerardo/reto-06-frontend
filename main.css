@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    padding: 0.6em;
+    border-radius: 8px;
+    border: #000 solid 2px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box button {
+    width: 5em;
+    height: 5em;
+    margin: 5px ;
+    cursor: pointer;
+}
+
+.box button p {
+    font-size: 3em;
+}
+
+.resultado {
+    width: 100%;
+    height: 75px;
+    border: 3px solid #000;
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#resultado::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#resultado::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+#resultado::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+#resultado::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#resultado::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#resultado::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+#resultado {
+    position: absolute;
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 500;
+}
