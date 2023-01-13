@@ -2,7 +2,7 @@ let valorA;
 let valorB;
 let resultadoFinal;
 
-function reset () {
+function reset() {
   resultado.textContent = "";
   valorA = 0;
   valorB = 0;
@@ -10,7 +10,7 @@ function reset () {
 }
 
 function indent(value) {
-  // Vamos a capturar los elementos
+  // Captura de elementos
 
   const resultado = document.getElementById("resultado");
   const suma = document.getElementById("suma");
@@ -19,7 +19,7 @@ function indent(value) {
   const division = document.getElementById("division");
   const igual = document.getElementById("igual");
 
-  //
+  // Creación de funciones
 
   resultado.textContent += value;
 
@@ -52,11 +52,11 @@ function indent(value) {
     solve();
   };
 
-  function clean () {
+  function clean() {
     resultado.textContent = "";
   }
 
-  function solve () {
+  function solve() {
     let res = 0;
     switch (resultadoFinal) {
       case "+":
@@ -70,7 +70,7 @@ function indent(value) {
         break;
       case "/":
         res = parseFloat(valorA) / parseFloat(valorB);
-        break;  
+        break;
     }
     reset();
     resultado.textContent = res;
